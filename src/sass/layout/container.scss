@@ -1,19 +1,17 @@
 .container {
-    max-width: 1145px;
+    width: 292px;
     margin: 0 auto;
-    text-align: center;
  }
-
-/*Медиазапрос для мобилок*/
-@media (min-width: 320px){
-    .container{
-        max-width: 292px;
-    }
-}
 
 /*Медиазапрос для планшетов и больше*/
 @media (min-width: 768px){
     .container{
-        max-width: 708px;
+        width: 708px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1145px;
     }
 }
