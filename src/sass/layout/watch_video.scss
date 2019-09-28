@@ -5,6 +5,9 @@
 
 .watch_video{
     padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .wv_title{
@@ -17,4 +20,62 @@
     @include font('Raleway', 15px, 400, none );
     color: $white;
     padding: 0 25px;
+    padding-bottom: 26px;
+}
+
+.wv_social_container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.s_icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    background-color: #0098cd;
+    border-radius: 50%;
+}
+
+.wv_video{
+    width: 292px;
+    height: auto;
+}
+
+@media (min-width: 768px){
+    .wv_text_container{
+        width: 540px;
+    }
+
+    .wv_text{
+        padding: 0 50px;
+        padding-bottom: 26px;
+    }
+
+    .wv_video{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1140px){
+    .watch_video{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .wv_text_container{
+        width: 540px;
+        text-align: start;
+    }
+
+    .wv_social_container{
+        justify-content: start;
+    }
+
+    .wv_text{
+        padding: 0;
+        padding-bottom: 26px;
+    }
 }
