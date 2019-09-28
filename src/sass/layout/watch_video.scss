@@ -1,0 +1,20 @@
+.watch_video_wrapper{
+    background-color: $blue;
+    width: 100%;
+}
+
+.watch_video{
+    padding: 100px 0;
+}
+
+.wv_title{
+    @include font('Raleway', 27px, 700, uppercase );
+    color: $gray;
+    padding-bottom: 20px;
+}
+
+.wv_text{
+    @include font('Raleway', 15px, 400, none );
+    color: $white;
+    padding: 0 25px;
+}
