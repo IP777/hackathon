@@ -1,0 +1,5 @@
+.contacts__form-title {
+    @include font('Raleway', 18px, 500, uppercase );
+    color: $white;
+}
+
