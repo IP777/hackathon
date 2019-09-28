@@ -6,3 +6,42 @@
     color: $green;
     padding-bottom: 60px;
 }
+
+%headline{
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 60px;
+    margin-bottom: 10px;
+    background-color: $gray;
+}
+
+.headline::before{
+    @extend %headline;
+    margin-right: 20px;
+}
+
+.headline::after{
+    @extend %headline;
+    margin-left: 20px;
+}
+
+.headline-br{
+    display: block;
+}
+
+@media (max-width: 768px){
+    .headline{
+        font-size: 16px;
+    }
+
+    .headline::before{
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    
+    .headline::after{
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+}
