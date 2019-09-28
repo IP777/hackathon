@@ -1,10 +1,33 @@
+.contacts {
+  background-color: $darkgray;
+  background-image: url(../images/contacts_bg.png);
+}
+
 .contacts__form-title {
-  margin-bottom: 24px;
-  @include font('Raleway', 18px, 500, uppercase);
+  margin-bottom: 42px;
+  padding-top: 60px;
+  padding-bottom: 0;
   line-height: 28px;
   color: $white;
 }
 
+.contacts__form-areas--info {
+  width: 270px;
+  height: 44px;
+  margin-bottom: 24px;
+  padding-left: 22px;
+  border-radius: 5px 5px;
+  color: $gray;
+}
+
+.contacts__form-areas--text {
+  width: 270px;
+  height: 176px;
+  padding: 22px 14px;
+  margin-bottom: 44px;
+  border-radius: 5px 5px;
+  color: $gray;
+}
 
 .contacts__form-btn {
   display: block;
@@ -13,45 +36,51 @@
   height: 52px;
   margin-bottom: 56px;
   background-color: $blue;
-  @include font('Opens', 22px, 500, uppercase);
+  @include font('OpenSans', 22px, 500, uppercase);
   line-height: 24px;
   color: $white;
-  bprder-radius: 5px 5px;
+  border-radius: 5px 5px;
 }
 
 .contacts__list-title {
   @include font('Raleway', 24px, 500, none);
   color: $white;
+  margin-bottom: 8px;
 }
 
-.contacts__list-descript {}
+.contacts__list-descript {
+  @include font('OpenSans', 14px, 500, none);
+  line-height: 21px;
+  color: $gray;
+}
 
 .contacts__list {
   @extend %list-type-vertical-menu;
   width: 160px;
   min-height: 46px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  margin: 0 auto;
 }
 
 .contacts__list-item {
-  width: 44px;
+  align width: 44px;
   height: 44px;
   border-radius: 50px 50px;
 }
 
-
-
 .contacts__info {
   margin-bottom: 50px;
-  @include font('Opens', 14px, 500, none);
+  @include font('OpenSans', 14px, 500, none);
   line-height: 24px;
   color: $violet;
 }
 
 .contacts__text {
-  margin-bottom: 20px;
   padding-top: 22px;
+  padding-bottom: 20px;
   border-top: 1px solid $gray;
-  @include font('Opens', 14px, 400, none);
+  @include font('OpenSans', 14px, 400, none);
   line-height: 21px;
   color: $gray;
   text-align: left;
