@@ -10,6 +10,10 @@
     flex-wrap: wrap;
 }
 
+.wv_text_container{
+    text-align: center;
+}
+
 .wv_title{
     @include font('Raleway', 27px, 700, uppercase );
     color: $gray;
@@ -36,7 +40,9 @@
     margin: 0 10px;
     background-color: #0098cd;
     border-radius: 50%;
+    padding: 15px;
 }
+
 
 .wv_video{
     width: 292px;
@@ -59,7 +65,7 @@
     }
 }
 
-@media (min-width: 1140px){
+@media (min-width: 1145px){
     .watch_video{
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -77,5 +83,9 @@
     .wv_text{
         padding: 0;
         padding-bottom: 26px;
+    }
+
+    .wv_social_container{
+        padding-bottom: 0;
     }
 }
