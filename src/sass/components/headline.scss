@@ -1,13 +1,12 @@
 /* ---------Блоки заголовков сайта сайта------- */
-.headline{
+.headline, .headline_second {
     display: block;
     @include font('Raleway', 28px, 700, uppercase );
     text-align: center;
     color: $green;
-    padding-bottom: 60px;
 }
 
-%headline{
+.headline::before, .headline::after{
     display: inline-block;
     content: "";
     height: 1px;
@@ -17,31 +16,24 @@
 }
 
 .headline::before{
-    @extend %headline;
     margin-right: 20px;
 }
 
 .headline::after{
-    @extend %headline;
     margin-left: 20px;
 }
 
-.headline-br{
-    display: block;
+.headline--margin{
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px){
-    .headline{
+    .headline, .headline_second {
         font-size: 16px;
     }
 
-    .headline::before{
+    .headline::before, .headline::after{
         margin-bottom: 5px;
         margin-right: 10px;
-    }
-    
-    .headline::after{
-        margin-bottom: 5px;
-        margin-left: 10px;
     }
 }
