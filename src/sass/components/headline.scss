@@ -1,0 +1,8 @@
+/* ---------Блоки заголовков сайта сайта------- */
+.headline{
+    display: block;
+    @include font('Raleway', 28px, 700, uppercase );
+    text-align: center;
+    color: $green;
+    padding-bottom: 60px;
+}
