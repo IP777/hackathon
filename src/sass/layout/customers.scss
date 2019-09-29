@@ -1,0 +1,138 @@
+.customers_wrapper{
+    padding: 60px 0;
+}
+
+.headline_second--margin{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.headline_cus{
+    margin-bottom: 12px;
+}
+
+.headline_second--margin::before, 
+.headline_second--margin::after{
+    display: none;
+}
+
+.c_wrapper{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.c_img{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid $gray;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.c_name {
+    @include font('OpenSans', 18px, 500, none );
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.c_company {
+    @include font('OpenSans', 15px, 500, none );
+    color: $gray;
+    margin: 0;
+    padding: 0;
+}
+
+.c_text{
+    @include font('OpenSans', 16px, 400, none );
+    text-align: center;
+    color: $darkgray;
+    padding: 0 20px;
+    margin-bottom: 25px; 
+}
+
+.c_text::before{
+    display: block;
+    position: absolute;
+    content: url(../images/amper.png);
+    z-index: -1;
+    transform: translate(-20px, -20px);
+}
+
+@media (min-width: 768px){
+    .c_wrapper{
+        margin-bottom: 60px;
+    }
+    .c_text{
+        margin-bottom: 65px;
+    }
+
+    .headline_cus{
+        display: inline;
+        margin-bottom: 0;
+    }
+
+    .headline_second{
+        display: inline;
+    }
+
+    .headline_second--margin::before, 
+    .headline_second--margin::after{
+        display: inline-block;
+    }
+
+    .headline_cus::before, 
+    .headline_cus::after{
+    display: none;
+}
+}
+
+@media (min-width: 1200px){
+    .c_text{
+        margin-bottom: 95px;
+    }
+}
+
+// Пагинация
+.carousel-indicators {
+    bottom: 5%;
+    left: 5%;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    right: 5%;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .carousel-indicators li {
+    display: inline-block;
+  }
+  
+.carousel-indicator {
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+    padding: 5px 5px;
+    color: rgba(40, 37, 40, 0.3);
+  }
+  
+  .carousel-indicator:hover {
+    color: rgba(27, 177, 147, 1);
+  }
+  
+  .carousel-active:checked+.carousel-item .carousel-caption {
+    transition: opacity 0.6s ease-in;
+    opacity: 1;
+  }
+  
+  /* If you`re needing more than 3 banners, maybe you might be using another way to represent your info... ;-) */
+  #carousel-1:checked~.carousel-indicators .carousel-indicator[for="carousel-1"],
+  #carousel-2:checked~.carousel-indicators .carousel-indicator[for="carousel-2"],
+  #carousel-3:checked~.carousel-indicators .carousel-indicator[for="carousel-3"],
+  #carousel-4:checked~.carousel-indicators .carousel-indicator[for="carousel-4"] {
+    color: #007f7f
+  }
