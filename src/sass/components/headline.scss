@@ -1,47 +1,88 @@
 /* ---------Блоки заголовков сайта сайта------- */
-.headline{
+.headline, .headline_second {
     display: block;
-    @include font('Raleway', 28px, 700, uppercase );
+    @include font('Raleway', 16px, 700, uppercase );
     text-align: center;
     color: $green;
-    padding-bottom: 60px;
 }
 
-%headline{
+.headline--margin_key{
+    margin-bottom: 35px;
+}
+
+.headline--margin_our_team{
+    margin-bottom: 35px;
+}
+
+.headline--margin_contact{
+    margin-bottom: 45px;
+    color: $white;
+}
+
+.headline::before,
+.headline::after,
+{
     display: inline-block;
     content: "";
     height: 1px;
     width: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background-color: $gray;
 }
 
 .headline::before{
-    @extend %headline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .headline::after{
-    @extend %headline;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
-.headline-br{
-    display: block;
-}
+@media (min-width: 768px){
+    .headline, .headline_second {
+        font-size: 28px;
+    }
 
-@media (max-width: 768px){
-    .headline{
-        font-size: 16px;
+    .headline--margin_key{
+        margin-bottom: 65px;
+    }
+
+    .headline--margin_our_team{
+        margin-bottom: 65px;
+    }
+
+    .headline--margin_contact{
+        margin-bottom: 75px;
+    }
+
+    .headline::before, .headline::after{
+        margin-bottom: 10px;
     }
 
     .headline::before{
-        margin-bottom: 5px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     
     .headline::after{
-        margin-bottom: 5px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
+
+@media (min-width: 1200px){
+    .headline--margin_key{
+        margin-bottom: 90px;
+    }
+
+    .headline--margin_contact{
+        margin-bottom: 125px;
+    }
+}
+
+// Для блока KEY FEATURES
+// <h3 class="headline headline--margin_key">KEY FEATURES</h3>
+
+// Для блока Our Team
+// <h3 class="headline headline--margin_our_team">Our Team</h3>
+
+// Для блока Contact us
+// <h3 class="headline headline--margin_contact">Contact us</h3>
