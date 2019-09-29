@@ -1,0 +1,48 @@
+
+.team__description{
+
+  @include font('Myriad Pro', 16px, 700);
+  text-transform: capitalize;
+  color: rgb(40, 37, 40);
+  line-height: 1.846;
+  text-align: center;
+  padding: 20px;
+}
+
+.team__list {
+  @extend %list-type-vertical-menu;
+  justify-content: center;
+}
+
+.team-member {
+  position: relative;
+  width: 270px;
+}
+
+.socials {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  opacity: 0;
+}
+
+.socials__list {
+    display: flex;
+    height: 100%;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+}
+
+.team-member__name{
+  @include font('Raleway', 18px, 700, bold );
+  text-align: left;
+  padding-left: 20px;
+  color: $black;
+}
