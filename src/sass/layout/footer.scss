@@ -1,15 +1,17 @@
 .contacts {
   background-color: $darkgray;
   background-image: url(../images/contacts_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.contacts__form-title {
-  margin-bottom: 42px;
-  padding-top: 60px;
-  padding-bottom: 0;
-  line-height: 28px;
-  color: $white;
-}
+// .contacts__form-title {
+//   margin-bottom: 42px;
+//   padding-top: 60px;
+//   padding-bottom: 0;
+//   line-height: 28px;
+//   color: $white;
+// }
 
 .contacts__form-areas--info {
   width: 270px;
@@ -64,9 +66,13 @@
 }
 
 .contacts__list-item {
-  align width: 44px;
+  width: 44px;
   height: 44px;
   border-radius: 50px 50px;
+}
+
+.contact__list-svg {
+
 }
 
 .contacts__info {
@@ -85,3 +91,4 @@
   color: $gray;
   text-align: left;
 }
+
