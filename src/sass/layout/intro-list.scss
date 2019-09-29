@@ -1,0 +1,34 @@
+.introduction_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    color: $white;
+
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 80px;
+    }
+}
+
+.introduction_list-item {
+    @media (max-width:767px) {
+        @include font('open sans', 12px, 500, none )
+    }
+
+    @media (min-width: 768px) {
+        @include font ('myriad pro', 16px, 400, none)
+    }
+}
+
+.introduction_list-item:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.introduction_list-item::before {
+    content: "\003e";
+    padding-right: 10px;
+}

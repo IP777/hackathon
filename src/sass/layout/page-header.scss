@@ -1,0 +1,39 @@
+.page-header {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  @media (max-width: 767px) {
+    background-image: url(../images/mobile-background.png);
+    
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/tablet-background@2x.png);
+    }
+  }
+
+    height: 568px;
+  padding-top: 20px;
+
+  @media (min-width: 768px) {
+    background-image: url(../images/tablet-background.png);
+
+    height: 758px;
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/tablet-background@2x.png);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url(../images/desktop-background.png);
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/desktop-background@2x.png);
+    }
+  }
+
+}

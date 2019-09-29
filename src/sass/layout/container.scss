@@ -1,13 +1,12 @@
 .container {
     max-width: 1145px;
     margin: 0 auto;
-    text-align: center;
  }
 
 /*Медиазапрос для мобилок*/
 @media (min-width: 320px){
     .container{
-        max-width: 292px;
+        max-width: 290px;
     }
 }
 
@@ -15,5 +14,11 @@
 @media (min-width: 768px){
     .container{
         max-width: 708px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1145px;
     }
 }
