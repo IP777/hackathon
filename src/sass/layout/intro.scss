@@ -35,10 +35,7 @@
         background-image: url(../images/cloud-iconbutton.png);
     }
 
-    @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/cloud-iconbutton@2x.png);
-    }
+   
 
     &:focus {
         outline: 1px solid red;

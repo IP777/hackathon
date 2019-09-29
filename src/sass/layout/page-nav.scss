@@ -24,10 +24,7 @@
         width: 28px;
         height: 19px;
 
-        @media (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/button-nav@2x.png);
-        }
+        
     }
 
     @media (min-width: 768px) {

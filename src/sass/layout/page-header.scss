@@ -7,10 +7,7 @@
     background-image: url(../images/mobile-background.png);
     
 
-    @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/tablet-background@2x.png);
-    }
+    
   }
 
     height: 568px;
@@ -21,19 +18,13 @@
 
     height: 758px;
 
-    @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/tablet-background@2x.png);
-    }
+   
   }
 
   @media (min-width: 1200px) {
     background-image: url(../images/desktop-background.png);
 
-    @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/desktop-background@2x.png);
-    }
+    
   }
 
 }

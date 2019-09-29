@@ -1,6 +1,8 @@
+.section_team{
+  padding-top: 60px;
+}
 
 .team__description{
-
   @include font('Myriad Pro', 16px, 700, capitalize);
   color: rgb(40, 37, 40);
   line-height: 1.846;
@@ -91,6 +93,10 @@
 }
 
 @media (min-width: 768px) {
+  .section_team{
+    padding-top: 115px;
+  }
+
   .team__description {
     padding-bottom: 50px;
   }
