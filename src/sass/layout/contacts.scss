@@ -3,11 +3,5 @@
     background-image: url(../images/contacts_bg.png);
     background-repeat: no-repeat;
     background-position: center;
-  }
-
-  @media (min-width: 1200px) {
-    .contacts {
-      background-size: cover;
-    }
-    
+    background-size: cover;
   }
