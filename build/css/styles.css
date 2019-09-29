@@ -563,6 +563,8 @@ h4 {
   border-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  background-color: #fff;
 }
 
 .logo {
@@ -622,7 +624,8 @@ h4 {
 }
 
 .button_intro:focus {
-  outline: 1px solid red;
+  outline: none;
+  border: 1px solid greenyellow;
 }
 
 .button_intro:active {
@@ -1211,7 +1214,7 @@ textarea[name="atext"]:invalid {
   }
 
   .button_nav {
-    display: none;
+    display: block;
   }
 
   .logo {
@@ -1516,6 +1519,11 @@ textarea[name="atext"]:invalid {
     height: 19px;
   }
 
+  .button_nav:hover > .page-menu,
+  .button_nav:focus > .page-menu {
+    display: block;
+  }
+
   .logo {
     font-family: "Raleway", sans-serif;
     font-size: 22px;
@@ -1525,6 +1533,25 @@ textarea[name="atext"]:invalid {
 
   .page-menu {
     display: none;
+    list-style: none;
+    position: absolute;
+    text-align: left;
+    padding-left: 5px;
+    top: 20px;
+    left: -50px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .page-menu_item:not(:last-child) {
+    padding-bottom: 4px;
+  }
+
+  .page-menu_item-link {
+    font-family: "open sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   .page-description {
