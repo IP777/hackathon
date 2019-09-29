@@ -1,0 +1,80 @@
+.introduction {
+
+    @media (min-width: 768px) {
+        width: 500px;
+    }
+}
+
+.button_intro {
+    padding: 0;
+    margin-left: 20px;
+    width: 210px;
+    height: 50px;
+
+    @include font('myriad pro', 20px, 400, capitalize);
+    color: $white;
+
+    border-radius: 5px;
+    border: 0 solid rgb(26, 183, 152); 
+    background-color: rgb(26, 183, 152);
+
+    outline: none;
+    cursor: pointer;
+
+    &::before {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+
+        width: 36px;
+        height: 24px;
+        content: '';
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/cloud-iconbutton.png);
+    }
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/cloud-iconbutton@2x.png);
+    }
+
+    &:focus {
+        outline: 1px solid red;
+    }
+
+    &:active {
+        transform: translateY(1px);
+        filter: saturate(150%);}
+}
+
+.introduction_title {
+    color: $white;
+
+    @media (max-width: 767px) {
+        @include font('raleway', 25px, 700, capitalize);
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+
+        @include font('raleway', 42px, 700, capitalize);
+        margin-bottom: 50px;
+    }
+}
+
+.introduction_title span {
+    color: $white;
+    display: block;
+
+    @media (max-width: 767px) {
+        @include font('raleway', 18px, 700, capitalize);
+
+        padding-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+        @include font('myriad pro', 22px, 400, none)   
+    }
+}

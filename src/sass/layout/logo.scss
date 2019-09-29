@@ -1,0 +1,11 @@
+.logo {
+    color: $green;
+
+    @media (max-width: 767px) {
+        @include font('Raleway', 22px, 500, capitalize);
+    }
+
+    @media (min-width: 768px) {
+        @include font('Raleway', 30px, 500, capitalize)
+    }
+}
