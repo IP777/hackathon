@@ -30,10 +30,10 @@
 
         background-image: url(../images/tablet-phone-min.png);
 
-        @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/tablet-phone-min@2x.png);
-    }
+    //     @media (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    //     background-image: url(../images/tablet-phone-min@2x.png);
+    // }
     }
 
     @media (min-width: 1200px) {
@@ -45,10 +45,10 @@
         
         background-image: url(../images/desktop-phone-min.png);
 
-        @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/desktop-phone-min@2x.png);
-    }
+    //     @media (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    //     background-image: url(../images/desktop-phone-min@2x.png);
+    // }
     }
 }
 
@@ -62,10 +62,10 @@
 
         background-image: url(../images/tablet-phone-big.png);
 
-        @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/tablet-phone-big@2x.png);
-    }
+    //     @media (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    //     background-image: url(../images/tablet-phone-big@2x.png);
+    // }
     }
 
     @media (min-width: 1200px) {
@@ -74,9 +74,9 @@
         
         background-image: url(../images/desktop-phone-max.png);
 
-        @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/desktop-phone-big@2x.png);
-    }
+    //     @media (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    //     background-image: url(../images/desktop-phone-big@2x.png);
+    // }
     }
 }

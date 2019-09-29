@@ -12,6 +12,7 @@
     border-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 
     @media (max-width: 767px) {
         background-image: url(../images/button-nav.png);
@@ -24,13 +25,23 @@
         width: 28px;
         height: 19px;
 
-        @media (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/button-nav@2x.png);
+        &:hover>.page-menu, &:focus>.page-menu {
+            display: block;
         }
+
+        // @media (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        // background-image: url(../images/button-nav@2x.png);
+        // }
     }
 
     @media (min-width: 768px) {
-        display: none;
+        display: block;
     }
 }
+
+// @media (max-width: 767px) {
+//     .button_nav:hover>.page-menu {
+//         display: block;
+//     }
+// }
